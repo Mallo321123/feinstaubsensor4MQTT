@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      dockerfile: Dockerfile
+    container_name: feinstaub4mqtt
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./feinstaub.conf:/app/feinstaub.conf
